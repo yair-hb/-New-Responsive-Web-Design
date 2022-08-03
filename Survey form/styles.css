@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--color-white);
+    margin: 0;
+  }
+  
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 145, 158, 0.8),
+        rgba(206, 136, 171, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header {
+    font-weight: bolder;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ced4da;
+}
+.description {
+    font-style: italic;
+}
+form{
+    background:rgba(37, 88, 74, 0.8);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
+label {
+    display: flex;
+    font-family: sans-serif;
+    color: azure;
+    font-size: 1.125rem;
+}
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(111, 10, 60, 0.7);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #ced4da;
+    font-family: sans-serif;
+    font-weight: 800;
+  }
+div {
+    margin-bottom: 2rem;
+}
+.input-checkbox {
+    margin-right: 0.5rem;
+}
+.input-text-area {
+    resize: vertical;
+    min-height: 150px;
+    width: 100%;
+}

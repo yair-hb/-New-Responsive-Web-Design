@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <h1 id='title'>Formulario de encuesta</h1>
+            <p id='description'>Gracias por ayudarnos a mejorar la plataforma</p>
+        </header>
+            <form id='survey-form'>
+                <div class="form-group">
+                    <label id="name-label" for="nombre">Nombre</label>
+                    <input
+                      type="text"
+                      name="Nombre"
+                      id="Nombre"
+                      class="form-control"
+                      placeholder="Introduce tu nombre"
+                      required
+                    />
+                  </div>
+                <div>
+                    <label id="name-label">Email</label>
+                    <input type='email' 
+                    required id='email' 
+                    placeholder='Introduce tu Email'
+                    class="form-control"
+                    required>
+                </div>
+                    <label id="name-label">Edad(Opcional)</label>
+                    <input type='number' 
+                    id='number' 
+                    placeholder='Edad(opcional)' 
+                    min='13' max='100'
+                    class="form-control">
+                <div>
+                    <label id="name-label">Recomendarias freeCodeCamp a algun amigo?</label>
+                    <label><input type='radio' name='radio' value='Definitivamente'>Definitivamente</label>
+                    <label><input type='radio' name='radio' value='Probablemente'>Probablemente</label>
+                    <label><input type="radio" name="radio" value="no-creo">Poco probable</label>
+                </div>
+                <div>
+                    <label id="name-label">¿Qué opción describe mejor su función actual?</label>
+                    <select id='dropdown' class="form-control">
+                        <option>Estudiante</option>
+                        <option>Trabajador a tiempo completo</option>
+                        <option>Aprendiz a tiempo completo</option>
+                        <option>Prefiero no decirlo</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label id="name-label">¿Qué te gustaría que se mejorara? (Marque todo lo que corresponda)</label>
+                    <label><input type='checkbox' value='check' class="input-checkbox">Proyectos Front-end</label>
+                    <label><input type='checkbox' value='check2'class="input-checkbox">Proyectos Back-end</label>
+                    <label><input type='checkbox' value='check3'class="input-checkbox">Visualizacion de data</label>
+                    <label><input type='checkbox' value='check4'class="input-checkbox">Desafíos</label>
+                    <label><input type='checkbox' value='check5'class="input-checkbox">Comunidad Open-Source</label>
+                    <label><input type='checkbox' value='check6'class="input-checkbox">Videos</label>
+                    <label><input type='checkbox' value='check7'class="input-checkbox">Encuentros</label>
+                    <label><input type='checkbox' value='check8'class="input-checkbox">Wiki</label>
+                    <label><input type='checkbox' value='check9'class="input-checkbox">Foros</label>
+                    <label><input type='checkbox' value='check10'class="input-checkbox">Cursos Adicionales</label>
+                </div>
+                <div class="form-group">
+                    <label id="name-label" >¿Algún comentario o sugerencia?</label>
+                    <textarea class="input-text-area" placeholder='Agrega tus comentarios o sugerencias' ></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="submit" class="submit-button">Enviar</button>
+                </div>
+        </form>
+    </div>
+  </body>
+</html>
