@@ -1,0 +1,40 @@
+.about {
+    background-color:#3a3d40 ;
+    width: 100%;
+    height: 100vh;
+ 
+}
+.projects {
+    background-color: #45567d;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact {
+    background-color: #303841;
+    width: 100%;
+    height: 100vh;
+}
+.list {
+    list-style-type: none;
+    width: 20%;
+    background-color:#f7f7f7;
+    position: fixed;
+    height: 20vh;
+    overflow: auto;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+.list{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
