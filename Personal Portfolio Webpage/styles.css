@@ -93,6 +93,13 @@ a, a:visited, a:hover, a:active {
     height: 90%;
     width: 90%;
     object-fit:fill;
+    border-radius: 10px;
+}
+.project-image:hover {
+    -webkit-transform: scale(1.02);
+	transform: scale(1.01);
+	-webkit-transition: .3s ease-in-out;
+	transition: .2s ease-in-out;
 }
 .project-title{
     color: white;
@@ -103,14 +110,32 @@ a, a:visited, a:hover, a:active {
     padding-top: 3rem;
 }
 .project-titles {
-    color: white;
+    color: white;   
+    text-shadow: 2px 2px 1px #1f1f1f;
 }
 
+button {
+    margin: 50px;
+    background-color: #be3144; 
+    border: none;
+    color: white;
+    padding: 30px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+button:hover {
+    opacity: 1;
+    text-shadow: 2px 2px 1px #2b2a2a;
+}
 @media (max-width: 28.75em) {
     .projects-title {
       font-size: 4rem;
     }
-  }
+}
 
 @media (max-width: 30.625em) {
     .projects-section {
@@ -126,7 +151,7 @@ a, a:visited, a:hover, a:active {
         width: 80%;
         object-fit:contain;
     }
-    
+
 }
 /**************************CONTACT**********************************/
 .contact {
@@ -180,7 +205,6 @@ a, a:visited, a:hover, a:active {
 #gh:hover {
     transform: translateY(8px);
     color:#171515;
-    
     text-shadow: 2px 2px 1px #2b2a2a;
 }
 #email {
